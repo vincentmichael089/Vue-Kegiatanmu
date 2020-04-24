@@ -1,10 +1,13 @@
-import Vue from 'vue'
 import Vuex from 'vuex'
+import vue from 'vue'
+import todos from './modules/todos'
 
-Vue.use(Vuex)
+// use Vuex as middleware
+vue.use(Vuex)
 
+// create store
 export default new Vuex.Store({
-  modules: {
-
-  }
+    modules:{
+        todos
+    }
 })

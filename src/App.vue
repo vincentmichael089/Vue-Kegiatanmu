@@ -1,10 +1,12 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Beranda</router-link> |
-      <router-link to="/kegiatan">kegiatan</router-link>
+  <div class="container">
+    <div id="app">
+      <div id="nav">
+        <router-link to="/">Beranda</router-link>|
+        <router-link to="/kegiatan">Kegiatan</router-link>
+      </div>
+      <router-view />
     </div>
-    <router-view/>
   </div>
 </template>
 
@@ -28,5 +30,28 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
 }
 </style>
