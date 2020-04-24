@@ -1,27 +1,27 @@
 <template>
-  <div class="container">
-    <div id="app">
-      <div class="main-title">Kegiatanmu</div>
-      <div id="nav">
-        <router-link to="/">Beranda </router-link>|
-        <router-link to="/kegiatan"> Kegiatan</router-link>
-      </div>
-      <router-view />
+  <div id="app">
+    <div class="main-title">Kegiatanmu</div>
+    <div id="nav">
+      <router-link to="/">Beranda</router-link>|
+      <router-link to="/kegiatan">Kegiatan</router-link>
     </div>
+    <router-view />
   </div>
 </template>
 
 <style>
+
+
 #app {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+
 }
 
 #nav {
-  padding: 10px 0 30px 0  ;
+  padding: 10px 0 30px 0;
 }
 
 #nav a {
@@ -41,29 +41,29 @@
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
-    background: transparent; 
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: black; 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: orangered; 
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: red; 
-  }
+  width: 10px;
+  background: transparent;
+}
 
-.main-title{
-    padding-top: 30px;
-    font-family: 'Calistoga';
-    font-size: 3rem;
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: orangered;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: red;
+}
+
+.main-title {
+  padding-top: 30px;
+  font-family: "Calistoga";
+  font-size: 3rem;
 }
 
 @media (min-width: 768px) {

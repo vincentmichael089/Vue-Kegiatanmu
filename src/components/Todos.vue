@@ -10,7 +10,7 @@
       >
         <div class="card-title center">
           <h3>{{todo.title}}</h3>
-        </div>  
+        </div>
         <div class="todo-btn-wrapper">
           <button class="complete-todo" v-on:click="onDoubleClick(todo)">Selesai</button>
           <button class="delete-todo" v-on:click="deleteTodo(todo.id)">Hapus</button>
@@ -49,6 +49,7 @@ export default {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
+  
 }
 
 .todo {
@@ -60,7 +61,9 @@ export default {
   border-radius: 8px;
   height: 200px;
   margin: 0 10px 1.5em;
-  background: #fff;
+  background-image: url("../assets/uncheck-bg.png");
+  background-position: right;
+  background-size: cover;
   box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
 }
 
@@ -118,9 +121,10 @@ export default {
 }
 
 .complete-card {
-  background: greenyellow;
+  background-image: url("../assets/check-bg.png");
+  background-position: right;
+  background-size: cover;
 }
-
 
 @media (max-width: 500px) {
   .todos {
