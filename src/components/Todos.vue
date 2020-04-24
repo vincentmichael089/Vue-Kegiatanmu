@@ -8,9 +8,11 @@
         v-on:dblclick="onDoubleClick(todo)"
         v-bind:class="{'complete-card':todo.completed}"
       >
-        {{todo.title}}
+        <div class="card-title center">
+          <h3>{{todo.title}}</h3>
+        </div>  
         <div class="todo-btn-wrapper">
-            <button class="complete-todo" v-on:click="onDoubleClick(todo)">Selesai</button>
+          <button class="complete-todo" v-on:click="onDoubleClick(todo)">Selesai</button>
           <button class="delete-todo" v-on:click="deleteTodo(todo.id)">Hapus</button>
         </div>
       </div>
@@ -50,8 +52,8 @@ export default {
 }
 
 .todo {
- display: flex;
- flex-flow: column nowrap;
+  display: flex;
+  flex-flow: column nowrap;
   padding: 15px 15px 5px 15px;
   position: relative;
   overflow: hidden;
@@ -62,10 +64,21 @@ export default {
   box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
 }
 
-.todo-btn-wrapper{
-    padding: 10px;
-    position: relative;
-    margin-top: auto;
+.todo:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+}
+
+.todo-btn-wrapper {
+  padding: 10px;
+  position: relative;
+  margin-top: auto;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .delete-todo {
@@ -79,6 +92,7 @@ export default {
   text-align: center;
   vertical-align: middle;
   margin-left: 2px;
+  cursor: pointer;
 }
 
 .delete-todo:hover {
@@ -96,6 +110,7 @@ export default {
   text-align: center;
   vertical-align: middle;
   margin-right: 2px;
+  cursor: pointer;
 }
 
 .complete-todo:hover {
@@ -112,7 +127,7 @@ export default {
   }
 
   .todo {
-    height: 100px;
+    height: 150px;
   }
 }
 
@@ -122,7 +137,7 @@ export default {
   }
 
   .todo {
-    height: 100px;
+    height: 150px;
   }
 }
 </style>
