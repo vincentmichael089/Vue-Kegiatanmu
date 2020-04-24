@@ -1,6 +1,5 @@
 <template>
   <div class="about">
-    <h3>Kegiatanmu</h3>  
     <AddTodo/>
     <FilterTodos />
     <Todos />
@@ -22,5 +21,6 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+
 </style>

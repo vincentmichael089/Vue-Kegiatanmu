@@ -1,9 +1,10 @@
 <template>
   <div class="container">
     <div id="app">
+      <div class="main-title">Kegiatanmu</div>
       <div id="nav">
-        <router-link to="/">Beranda</router-link>|
-        <router-link to="/kegiatan">Kegiatan</router-link>
+        <router-link to="/">Beranda </router-link>|
+        <router-link to="/kegiatan"> Kegiatan</router-link>
       </div>
       <router-view />
     </div>
@@ -12,7 +13,7 @@
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -20,11 +21,12 @@
 }
 
 #nav {
-  padding: 30px;
+  padding: 10px 0 30px 0  ;
 }
 
 #nav a {
   font-weight: bold;
+  font-size: 1.25rem;
   color: #2c3e50;
 }
 
@@ -57,6 +59,12 @@
   ::-webkit-scrollbar-thumb:hover {
     background: red; 
   }
+
+.main-title{
+    padding-top: 30px;
+    font-family: 'Calistoga';
+    font-size: 3rem;
+}
 
 @media (min-width: 768px) {
   .container {

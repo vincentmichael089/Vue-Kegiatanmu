@@ -121,6 +121,7 @@ export default {
   background: greenyellow;
 }
 
+
 @media (max-width: 500px) {
   .todos {
     grid-template-columns: 1fr;
