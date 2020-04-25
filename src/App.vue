@@ -11,14 +11,20 @@
 
 <style>
 
-
 #app {
   font-family: "Montserrat";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
 
+  background-image: url("./assets/bg-pic.jpg");
+min-height: 100vh;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+background-size: cover;
 }
+
 
 #nav {
   padding: 10px 0 30px 0;
@@ -40,6 +46,8 @@
   margin-left: auto;
 }
 
+
+
 ::-webkit-scrollbar {
   width: 10px;
   background: transparent;
@@ -59,6 +67,7 @@
 ::-webkit-scrollbar-thumb:hover {
   background: red;
 }
+
 
 .main-title {
   padding-top: 30px;
